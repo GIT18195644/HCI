@@ -72,8 +72,8 @@
 				              		<span class="flaticon-worldwide"></span>
 				              	</div>
 				              	<div class="desc text-left">
-					                <strong class="number" data-number="46">0</strong>
-					                <span>Countries</span>
+					                <strong class="number" data-number="2859267">0</strong>
+					                <span>Island Wide Jobs</span>
 				                </div>
 				              </div>
 				            </div>
@@ -85,7 +85,7 @@
 				              		<span class="flaticon-visitor"></span>
 				              	</div>
 				              	<div class="desc text-left">
-					                <strong class="number" data-number="450">0</strong>
+					                <strong class="number" data-number="39391">0</strong>
 					                <span>Companies</span>
 					              </div>
 				              </div>
@@ -98,7 +98,7 @@
 				              		<span class="flaticon-resume"></span>
 				              	</div>
 				              	<div class="desc text-left">
-					                <strong class="number" data-number="80000">0</strong>
+					                <strong class="number" data-number="1943101">0</strong>
 					                <span>Active Employees</span>
 					              </div>
 				              </div>
@@ -121,13 +121,13 @@
 				            <div class="tab-content p-4" id="v-pills-tabContent">
 
 				              <div class="tab-pane fade show active" id="v-pills-1" role="tabpanel" aria-labelledby="v-pills-nextgen-tab">
-				              	<form action="#" class="search-job">
+				              	<form name="mySearchForm" action="browsejobs.html" class="search-job">
 				              		<div class="row no-gutters">
 				              			<div class="col-md mr-md-2">
 				              				<div class="form-group">
 					              				<div class="form-field">
 					              					<div class="icon"><span class="icon-briefcase"></span></div>
-									                <input type="text" class="form-control" placeholder="Job">
+									                <input type="text" name="HJob" id="HJob" class="form-control" placeholder="Job" required>
 									              </div>
 								              </div>
 				              			</div>
@@ -136,13 +136,13 @@
 				              					<div class="form-field">
 					              					<div class="select-wrap">
 							                      <div class="icon"><span class="ion-ios-arrow-down"></span></div>
-							                      <select name="" id="" class="form-control">
+							                      <select name="HCategory" id="HCategory" class="form-control" required>
 							                      	<option value="">Category</option>
-							                      	<option value="">Full Time</option>
-							                        <option value="">Part Time</option>
-							                        <option value="">Freelance</option>
-							                        <option value="">Internship</option>
-							                        <option value="">Temporary</option>
+							                      	<option value="Full Time">Full Time</option>
+							                        <option value="Part Time">Part Time</option>
+							                        <option value="Freelance">Freelance</option>
+							                        <option value="Internship">Internship</option>
+							                        <option value="Temporary">Temporary</option>
 							                      </select>
 							                    </div>
 									              </div>
@@ -155,33 +155,33 @@
 													<!-- <input type="text" class="form-control" placeholder="Location"> -->
 													<div class="select-wrap">
 														<div class="icon"><span class="icon-map-marker"></span></div>
-														<select name="" id="" class="form-control">
+														<select name="HLocation" id="HLocation" class="form-control" required>
 														  <option value="">Location</option>
-														  <option value="">Ampara</option>
-														  <option value="">Anuradhapura</option>
-														  <option value="">Badulla</option>
-														  <option value="">Batticaloa</option>
-														  <option value="">Colombo</option>
-														  <option value="">Galle</option>
-														  <option value="">Gampaha</option>
-														  <option value="">Hambantota</option>
-														  <option value="">Jaffna</option>
-														  <option value="">Kalutara</option>
-														  <option value="">Kandy</option>
-														  <option value="">Kegalle</option>
-														  <option value="">Kilinochchi</option>
-														  <option value="">Kurunegala</option>
-														  <option value="">Mannar</option>
-														  <option value="">Matale</option>
-														  <option value="">Matara</option>
-														  <option value="">Monaragala</option>
-														  <option value="">Mullaitivu</option>
-														  <option value="">Nuwara Eliya</option>
-														  <option value="">Polonnaruwa</option>
-														  <option value="">Puttalam</option>
-														  <option value="">Ratnapura</option>
-														  <option value="">Trincomalee</option>
-														  <option value="">Vavuniya</option>
+														  <option value="Ampara">Ampara</option>
+														  <option value="Anuradhapura">Anuradhapura</option>
+														  <option value="Badulla">Badulla</option>
+														  <option value="Batticaloa">Batticaloa</option>
+														  <option value="Colombo">Colombo</option>
+														  <option value="Galle">Galle</option>
+														  <option value="Gampaha">Gampaha</option>
+														  <option value="Hambantota">Hambantota</option>
+														  <option value="Jaffna">Jaffna</option>
+														  <option value="Kalutara">Kalutara</option>
+														  <option value="Kandy">Kandy</option>
+														  <option value="Kegalle">Kegalle</option>
+														  <option value="Kilinochchi">Kilinochchi</option>
+														  <option value="Kurunegala">Kurunegala</option>
+														  <option value="Mannar">Mannar</option>
+														  <option value="Matale">Matale</option>
+														  <option value="Matara">Matara</option>
+														  <option value="Monaragala">Monaragala</option>
+														  <option value="Mullaitivu">Mullaitivu</option>
+														  <option value="Nuwara Eliya">Nuwara Eliya</option>
+														  <option value="Polonnaruwa">Polonnaruwa</option>
+														  <option value="Puttalam">Puttalam</option>
+														  <option value="Ratnapura">Ratnapura</option>
+														  <option value="Trincomalee">Trincomalee</option>
+														  <option value="Vavuniya">Vavuniya</option>
 														</select>
 													  </div>
 									              </div>
@@ -362,7 +362,7 @@
               <div class="icon"><span class="flaticon-resume"></span></div>
               <div class="media-body">
                 <h3 class="heading mb-3">Search Millions of Jobs</h3>
-                <p>A small river named Duden flows by their place and supplies.</p>
+                <!-- <p>A small river named Duden flows by their place and supplies.</p> -->
               </div>
             </div>      
           </div>
@@ -371,7 +371,7 @@
               <div class="icon"><span class="flaticon-team"></span></div>
               <div class="media-body">
                 <h3 class="heading mb-3">Easy To Manage Jobs</h3>
-                <p>A small river named Duden flows by their place and supplies.</p>
+                <!-- <p>A small river named Duden flows by their place and supplies.</p> -->
               </div>
             </div>    
           </div>
@@ -380,7 +380,7 @@
               <div class="icon"><span class="flaticon-career"></span></div>
               <div class="media-body">
                 <h3 class="heading mb-3">Top Careers</h3>
-                <p>A small river named Duden flows by their place and supplies.</p>
+                <!-- <p>A small river named Duden flows by their place and supplies.</p> -->
               </div>
             </div>      
           </div>
@@ -389,7 +389,7 @@
               <div class="icon"><span class="flaticon-employees"></span></div>
               <div class="media-body">
                 <h3 class="heading mb-3">Search Expert Candidates</h3>
-                <p>A small river named Duden flows by their place and supplies.</p>
+                <!-- <p>A small river named Duden flows by their place and supplies.</p> -->
               </div>
             </div>      
           </div>
@@ -1030,7 +1030,7 @@
   <script src="js/main.js"></script>
   <script>
 	function viewJob() {
-	  window.open("browsejobs.html");
+	  	window.open("browsejobs.html","_self");
 	}
   </script>
     
