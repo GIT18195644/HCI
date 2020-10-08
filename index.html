@@ -1633,18 +1633,46 @@
 				<div class="row d-flex justify-content-center">
 					<div class="col-md-7 text-center heading-section heading-section-white ftco-animate">
 						<h2>Subcribe to our Newsletter</h2>
-						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
-							there live the blind texts. Separated they live in</p>
+						<p></p>
 						<div class="row d-flex justify-content-center mt-4 mb-4">
 							<div class="col-md-12">
-								<form action="#" class="subscribe-form">
+								<form action="#" class="subscribe-form" id="myForm">
 									<div class="form-group d-flex">
-										<input type="text" class="form-control" placeholder="Enter email address">
-										<input type="submit" value="Subscribe" class="submit px-3">
+										<input type="email" class="form-control" placeholder="Enter email address"
+											id="emailsubs" name="emailsubs" required>
+										<input type="submit" value="Subscribe" class="submit px-3" id="btnemailsubmit"
+											name="btnemailsubmit" onclick="validateNewsform()">
 									</div>
 								</form>
 							</div>
 						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Modal -->
+		<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+			aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLongTitle"><i class="fa fa-envelope-o" aria-hidden="true"></i> Thank You!</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<p class="text-dark">Thank you to subscribing our news letter...</p>
+					</div>
+					<div class="modal-footer">
+						<div class="row">
+							<div class="col">
+								<p class="text-danger">If you want to unsubscribe our news letter.</p>
+							</div>
+							<div class="col">
+								<button type="button" class="btn btn-outline-danger"><i class="fa fa-bell-slash-o" aria-hidden="true"></i> Unsubscribe</button>
+							</div>
+						</div>	
 					</div>
 				</div>
 			</div>
@@ -1659,18 +1687,26 @@
 						<h2 class="ftco-heading-2">Follow Us On!</h2>
 						<div class="row">
 							<ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
-								<li class="ftco-animate"><a href="https://www.facebook.com/topjobs.lk/"><span class="fa fa-facebook"></span></a></li>
-								<li class="ftco-animate"><a href="https://twitter.com/topjobslk?lang=en"><span class="fa fa-twitter"></span></a></li>
-								<li class="ftco-animate"><a href="https://play.google.com/store/apps/details?id=lk.topjobs.androidapp&hl=en"><span class="fa fa-android"></span></a></li>
-								<li class="ftco-animate"><a href="https://apps.apple.com/lk/app/topjobs/id1204216479"><span class="fa fa-apple"></span></a></li>
+								<li class="ftco-animate"><a href="https://www.facebook.com/topjobs.lk/"><span
+											class="fa fa-facebook"></span></a></li>
+								<li class="ftco-animate"><a href="https://twitter.com/topjobslk?lang=en"><span
+											class="fa fa-twitter"></span></a></li>
+								<li class="ftco-animate"><a
+										href="https://play.google.com/store/apps/details?id=lk.topjobs.androidapp&hl=en"><span
+											class="fa fa-android"></span></a></li>
+								<li class="ftco-animate"><a
+										href="https://apps.apple.com/lk/app/topjobs/id1204216479"><span
+											class="fa fa-apple"></span></a></li>
 							</ul>
 						</div>
 						<div class="row">
 							<div class="col">
-								<a href="https://play.google.com/store/apps/details?id=lk.topjobs.androidapp&hl=en"><img src="./images/google-play.png" style="width: 100%; height: auto;"></a>
+								<a href="https://play.google.com/store/apps/details?id=lk.topjobs.androidapp&hl=en"><img
+										src="./images/google-play.png" style="width: 100%; height: auto;"></a>
 							</div>
 							<div class="col">
-								<a href="https://apps.apple.com/lk/app/topjobs/id1204216479"><img src="./images/apple-store.png" style="width: 100%; height: auto;"></a>
+								<a href="https://apps.apple.com/lk/app/topjobs/id1204216479"><img
+										src="./images/apple-store.png" style="width: 100%; height: auto;"></a>
 							</div>
 						</div>
 					</div>
@@ -1708,7 +1744,8 @@
 						<h2 class="ftco-heading-2">Have a Questions?</h2>
 						<div class="block-23 mb-3">
 							<ul>
-								<li><a href="#"><span class="icon icon-phone"></span><span class="text"> (+94) 11 776 5645 (+94) 77 391 8922</span></a></li>
+								<li><a href="#"><span class="icon icon-phone"></span><span class="text"> (+94) 11 776
+											5645 (+94) 77 391 8922</span></a></li>
 								<li><a href="#"><span class="icon icon-envelope"></span><span
 											class="text">support@topjobs.lk</span></a></li>
 							</ul>
@@ -1755,8 +1792,15 @@
 		function viewJob() {
 			window.open("browsejobs.html", "_self");
 		}
-	</script>
 
+		function validateNewsform() {
+			var txtemail = document.getElementById("emailsubs").value;
+			var mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+			if (txtemail != "" && txtemail.match(mailformat)) {
+				$('#exampleModalCenter').modal();
+			}
+		}
+	</script>
 </body>
 
 </html>

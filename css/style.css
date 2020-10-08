@@ -9108,7 +9108,8 @@ textarea.form-control {
 
 .ftco-animate {
   opacity: 0;
-  visibility: hidden; }
+  visibility: hidden;
+  /* background-color: red;  */ }
 
 .bg-primary {
   background: #206dfb !important; }
@@ -9185,7 +9186,7 @@ textarea.form-control {
     background: rgba(0, 0, 0, 0.05);
     border-radius: 50%;
     position: relative;
-    color: #206dfb; }
+    color: #BB2315; }
     .ftco-footer-social li a span {
       position: absolute;
       font-size: 20px;
@@ -9194,7 +9195,7 @@ textarea.form-control {
       -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
-      color: #206dfb !important; }
+      color: #BB2315 !important; }
     .ftco-footer-social li a:hover {
       color: #fff; }
 
