@@ -1,0 +1,99 @@
+.btn {
+    color: #ffffff !important;
+    background-color: rgb(202, 97, 106) !important;
+    border-color: #ad031a
+}
+
+.field-icon {
+    float: right;
+    margin-right: 10px;
+    margin-top: -35px;
+    position: relative;
+    z-index: 5;
+  }
+
+
+  .custom-control-input-green:focus~.custom-control-label::before {
+    border-color: #28a745 !important;
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25) !important;
+  }
+  
+  .custom-control-input-green:checked~.custom-control-label::before {
+    border-color: #28a745 !important;
+    background-color: #28a745 !important;
+  }
+  
+  .custom-control-input-green:focus:not(:checked)~.custom-control-label::before {
+    border-color: #5bd778 !important;
+  }
+  
+  .custom-control-input-green:not(:disabled):active~.custom-control-label::before {
+    background-color: #d6f5dd !important;
+    border-color: #d6f5dd !important;
+  }
+
+
+  .floating-shapes span {
+    display: block;
+    position: absolute;
+  }
+  
+  .floating-shapes span img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  /*# sourceMappingURL=style.css.map */
+  
+  
+  .floating-shapes span:nth-child(1) {
+    left: 4.8%;
+    top: 1.5%;
+  }
+  
+  .floating-shapes span:nth-child(2) {
+    left: 9.6%;
+    top: 27.2%;
+  }
+  
+  .floating-shapes span:nth-child(3) {
+    left: 8.8%;
+    bottom: 16%;
+  }
+  
+  .floating-shapes span:nth-child(4) {
+    left: 25%;
+    bottom: 21%;
+  }
+  
+  .floating-shapes span:nth-child(5) {
+    left: 35%;
+    top: 6.6%;
+  }
+  
+  .floating-shapes span:nth-child(6) {
+    left: 43%;
+    bottom: 30%;
+  }
+  
+  .floating-shapes span:nth-child(7) {
+    left: 49%;
+    top: 45%;
+  }
+  
+  .floating-shapes span:nth-child(8) {
+    right: 11.8%;
+    top: 33%;
+  }
+  
+  .floating-shapes span:nth-child(9) {
+    right: 6%;
+    top: 10%;
+  }
+  
+  .floating-shapes span:nth-child(10) {
+    right: 4.5%;
+    bottom: 33%;
+  }
+
+  
