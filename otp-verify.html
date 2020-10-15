@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Verification - Top Jobs - Sri Lankan Largest Jobboard</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container" style="padding: 5% 30%;">
+        <div class="row">
+            <div class="well border border-danger">
+                <div class=".col-md-6 .offset-md-3">
+                    <form class="border border-light p-5" method="POST">
+                        <div class="form-group text-center">
+                            <p class="h2 mb-4">We just sent you a verification code</p>
+                        </div>
+                        <div class="form-group text-center" style="font-size: 10rem;">
+                            <i class="fa fa-lock" aria-hidden="true" style="color: #dc3545"></i>
+                        </div>
+                        <div class="form-group text-center">
+                            <h5>We just sent a verification code to your email. If you don't see our email in your
+                                inbox, check your spam folder.</h5>
+                        </div>
+                        <div class="form-group has-error has-feedback" style="padding-bottom: 10%;">
+                            <!-- otp -->
+                            <input type="text" class="form-control" id="OtpCode" placeholder="Enter Code"
+                                onkeyup="this.value = this.value.toUpperCase();" maxlength="6" required>
+                        </div>
+                    </form>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <p>Didn't receive the code? <a onclick="resendOtp()">Resend</a></p>
+                            <div id="message1" style="display:none;" aria-hidden="true"><i
+                                    class="fa fa-circle-o-notch fa-spin" aria-hidden="true"></i> Please Wait!</div>
+                        </div>
+                        <div class="col-sm-6">
+                            <button type="button" class="btn btn-danger form-control" id="btnSubmitOtp"
+                                onclick="passwordResset()">
+                                Submit
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 1-->
+    <div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Error!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Please enter correct OTP Code! You have <a id="times" class="font-weight-bold"></a> times. Please try Again...
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2-->
+    <div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Error!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    You'r entered is incorrect! You have <a id="times" class="font-weight-bold"></a> times. Please try Again...
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3-->
+    <div class="modal fade" id="exampleModalCenter3" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Error!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    You have no times. Try Again Later...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" onclick="index()" data-dismiss="modal">Go To
+                        Home</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        console.log("Correct OTP is: 123ABC")
+
+        function index() {
+            window.open("index.html", "_self");
+        }
+
+        function resendOtp() {
+            $(document).ready(function () {
+                $('#message1').fadeIn('slow', function () {
+                    $('#message1').delay(5000).fadeOut();
+                });
+            });
+        }
+        var no = 6;
+        function passwordResset() {
+            no--;
+            document.getElementById("times").innerHTML = no;
+            var btnsubmit = document.getElementById("OtpCode").value;
+            var leng = btnsubmit.length;
+            console.log(leng);
+            if (btnsubmit != null && leng == 6 && btnsubmit == "123ABC") {
+                window.open("password-reset.html", "_self");
+            }
+            else if (no == 0) {
+                $('#exampleModalCenter3').modal();
+            }
+            else if (leng < 6 || btnsubmit == null) {
+                $('#exampleModalCenter1').modal();
+            }
+            else if (btnsubmit != "123ABC") {
+                $('#exampleModalCenter2').modal();
+            }
+        }
+    </script>
+</body>
+
+</html>
