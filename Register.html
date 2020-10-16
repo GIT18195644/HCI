@@ -4,7 +4,7 @@
     <title>Top Jobs - Sri Lankan Largest Jobboard</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
+    <link rel="icon" href="favicon.ico" type="image/gif" sizes="16x16">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -43,14 +43,13 @@
 
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav ml-auto">
-	          <li class="nav-item "><a href="index.html" class="nav-link">Home</a></li>
-			  <li class="nav-item"><a href="#" class="nav-link">Job Feed</a></li>
-			  <li class="nav-item"><a href="#" class="nav-link">FAQ</a></li>
-	          <li class="nav-item"><a href="#" class="nav-link">Post a Job</a></li>
-	          <li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
-	          
-			  <li class="nav-item active"><a href="#" class="nav-link">Sign Up</a></li>
-			  <li class="nav-item"><a href="#" class="nav-link">Sign In</a></li>
+            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item "><a href="browsejobs.html" class="nav-link">Job Feed</a></li>
+            <li class="nav-item "><a href="FAQ.html" class="nav-link">FAQ</a></li>
+            <li class="nav-item "><a href="post-your-vacancy.html" class="nav-link">Post Your Vacancy</a></li>
+            <li class="nav-item "><a href="contact.html" class="nav-link">Contact</a></li>
+            <li class="nav-item active"><a href="Register.html" class="nav-link">Sign Up</a></li>
+            <li class="nav-item "><a href="Login.html" class="nav-link">Sign In</a></li>
 	 
 	        </ul>
 	      </div>
@@ -120,7 +119,7 @@
                         <div class="tab-content" id="myTabContent">
                             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                                 <h3 class="register-heading">Apply as a Employee</h3>
-                                <form id="data" class="needs-validation" novalidate>
+                                <form id="data" action="browsejobs.html" class="needs-validation" novalidate>
                                 <div class="row register-form">
                                     <div class="col-md-6">
 
@@ -210,7 +209,7 @@
                             </div>
                             <div class="tab-pane fade show" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                                 <h3  class="register-heading">Apply as a Hirer</h3>
-                                <form id="data2">
+                                <form id="data2" action="post-your-vacancy.html" class="needs-validation" novalidate>
                                 <div class="row register-form">
                                     <div class="col-md-6">
                                         <div class="form-group">
@@ -269,9 +268,10 @@
                                                 <strong>Provide valid Answer</strong>
                                             </span>
                                         </div>
-                                        <input href="post-your-vacancy.html" type="submit" class="btnRegister"  value="Register"/>
-
-                                       
+                                        <div class="text-center">
+                                          <input type="submit" class="btn btn-lg btn-warning" href="post-your-vacancy.html"  value="Register"/>
+                                        </div>
+  
                                     </form>
                                    
                                     </div>
@@ -327,6 +327,9 @@
         document.getElementById("confirmpasswordalert").style.display="none";
         document.getElementById("phonealert").style.display="block";
     document.getElementById("phonealerttxt").innerHTML="Provide correct phone number format"
+      }else{
+
+        window.location.href="/browsejobs.html"
       }
     })
 
@@ -361,6 +364,8 @@
         document.getElementById("confirmpasswordalert2").style.display="none";
         document.getElementById("phonealert2").style.display="block";
     document.getElementById("phonealert2txt").innerHTML="Provide correct phone number format"
+      }else{
+        window.location.href="post-your-vacancy.html"
       }
     })
 
@@ -446,7 +451,7 @@
             <div class="col">
               <ul class="list-unstyled">
                 <li><a href="index.html" class="pb-1 d-block">Home</a></li>
-                <li><a href="error.html" class="pb-1 d-block">Post Your Vacancy</a></li>
+                <li><a href="post-your-vacancy.html" class="pb-1 d-block">Post Your Vacancy</a></li>
                 <li><a href="topEmp.html" class="pb-1 d-block">Top Employers</a></li>
                 <li><a href="TermsConditions.html" class="pb-1 d-block">Terms & Conditions</a></li>
                 <li><a href="privacy-policy.html" class="pb-1 d-block">Privacy Policy</a></li>
@@ -459,7 +464,7 @@
                 <li><a href="Mediaroom.html" class="pb-1 d-block">Media Room</a></li>
                 <li><a href="partners.html" class="pb-1 d-block">Partners</a></li>
                 <li><a href="error.html" class="pb-1 d-block">LMI</a></li>
-                <li><a href="error.html" class="pb-1 d-block">Site Map</a></li>
+                <li><a href="Sitemap.html" class="pb-1 d-block">Site Map</a></li>
               </ul>
             </div>
           </div>

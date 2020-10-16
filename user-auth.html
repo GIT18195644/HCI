@@ -37,9 +37,10 @@
                         <div class="form-group has-error has-feedback" style="padding-bottom: 10%;">
                             <!-- Email -->
                             <!-- <input type="email" class="form-control" id="emailAddress" placeholder="E mail" required> -->
-                            <input type="email" class="form-control" id="emailAddress"
-                                aria-describedby="emailHelp" placeholder="Enter email">
-                            <small id="emailHelp" class="form-text text-muted">If you can't find your account, Please send email admin@topjob.lk</small>
+                            <input type="email" class="form-control" id="emailAddress" aria-describedby="emailHelp"
+                                placeholder="Enter email">
+                            <small id="emailHelp" class="form-text text-muted">If you can't find your account, Please
+                                send email admin@topjob.lk</small>
                         </div>
                     </form>
                     <!-- <p id="error" class="text-center font-weight-bold"></p> -->
@@ -70,13 +71,13 @@
             if (EMAIL == CEMAIL) {
                 window.open("otp-verify.html", "_self");
             }
-            else if(EMAIL == "") {
+            else if (EMAIL == "") {
                 document.getElementById("emailAddress").value = "";
                 document.getElementById("emailAddress").placeholder = "Please enter email address";
             }
-            else if(!EMAIL.match(mailformat)) {
+            else if (!EMAIL.match(mailformat)) {
                 document.getElementById("emailAddress").value = "";
-                document.getElementById("emailAddress").placeholder = "You have entered an invalid email address!";     
+                document.getElementById("emailAddress").placeholder = "You have entered an invalid email address!";
             }
             else if (EMAIL != "dinuka@gmail.com" && EMAIL != "") {
                 document.getElementById("emailAddress").value = "";
