@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="theme-light">
 
 <head>
     <title>Verification - Top Jobs - Sri Lankan Largest Jobboard</title>
@@ -10,16 +10,22 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./css/color.schema.min.css" type="text/css" />
 </head>
 
 <body>
-    <div class="container" style="padding: 5% 30%;">
+    <div class="container" style="padding: 5% 35%;">
         <div class="row">
+            <label id="switch" class="switch">
+                <input type="checkbox" onchange="toggleTheme()" id="slider">
+                <span class="slider round"></span>
+            </label>
+            <!-- <a><h4>Dark Mode is</h4><h4 id="schemaMode">A</h4></a> -->
             <div class="well border border-danger">
                 <div class=".col-md-6 .offset-md-3">
                     <form class="border border-light p-5" method="POST">
                         <div class="form-group text-center">
-                            <p class="h2 mb-4">We just sent you a verification code</p>
+                            <h2>We just sent you a verification code</h2>
                         </div>
                         <div class="form-group text-center" style="font-size: 10rem;">
                             <i class="fa fa-lock" aria-hidden="true" style="color: #dc3545"></i>
@@ -33,6 +39,7 @@
                             <input type="text" class="form-control" id="OtpCode" placeholder="Enter Code"
                                 onkeyup="this.value = this.value.toUpperCase();" maxlength="6" required>
                         </div>
+                        
                     </form>
                     <div class="row">
                         <div class="col-sm-6">
@@ -59,13 +66,14 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle">Error!</h5>
+                    <h3 class="modal-title" id="exampleModalLongTitle">Error!</h3>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    Please enter correct OTP Code! You have <a id="times" class="font-weight-bold"></a> times. Please try Again...
+                    Please enter correct OTP Code! You have <i id="times" class="font-weight-bold"></i> times. Please
+                        try Again...
                 </div>
             </div>
         </div>
@@ -77,13 +85,14 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle">Error!</h5>
+                    <h3 class="modal-title" id="exampleModalLongTitle">Error!</h3>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    You'r entered is incorrect! You have <a id="times" class="font-weight-bold"></a> times. Please try Again...
+                   You'r entered is incorrect! Please try
+                        Again...
                 </div>
             </div>
         </div>
@@ -95,7 +104,7 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle">Error!</h5>
+                    <h3 class="modal-title" id="exampleModalLongTitle">Error!</h3>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -145,6 +154,33 @@
                 $('#exampleModalCenter2').modal();
             }
         }
+
+        // function to set a given theme/color-scheme
+        function setTheme(themeName) {
+            localStorage.setItem('theme', themeName);
+            document.documentElement.className = themeName;
+        }
+
+        // function to toggle between light and dark theme
+        function toggleTheme() {
+            if (localStorage.getItem('theme') === 'theme-dark') {
+                setTheme('theme-light');
+            } else {
+                setTheme('theme-dark');
+            }
+        }
+
+        // Immediately invoked function to set the theme on initial load
+        (function () {
+            if (localStorage.getItem('theme') === 'theme-dark') {
+                setTheme('theme-dark');
+                document.getElementById('slider').checked = false;
+            } else {
+                setTheme('theme-light');
+                document.getElementById('slider').checked = true;
+            }
+        })();
+
     </script>
 </body>
 
