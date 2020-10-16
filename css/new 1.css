@@ -1,0 +1,314 @@
+
+/*------ Contact us page ---------------*/
+
+/*[ Display ]
+-----------------------------------------------------------*/
+
+.dis-flex {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+/* layout -flex ----------*/
+.flex-col-c-m {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: center;
+}
+
+.flex-col {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+}
+
+/*padding*/
+.p-b-47 {padding-bottom: 47px;}
+.p-r-25 {padding-right: 25px;}
+.p-b-20 {padding-bottom: 20px;}
+
+
+
+/*====================================================================================*/
+
+/*=====================================================================================*/
+
+
+/*privacy policy page css===============================*/
+
+/*div creation*/
+/*main div*/
+.Ppolicy-main-div{
+	background-color:#F0EAEA;
+      width: 100%;
+      height: 100%;
+	   /*box-shadow: 5px 10px 18px #888888;*/
+	   margin : auto;
+	   padding-top:2%;
+	   
+}
+
+/*sub div*/
+.Ppolicy-sub1-div{
+	background-color:#FFFFFF;
+	width: 98%;
+	margin : auto;
+	box-shadow: 5px 10px 18px #888888;
+	border-radius: 5px;
+
+	
+}
+
+.Ppolicy-sub2-div{
+	width: 96%;
+	margin : auto;
+	
+	
+}
+
+.Ppolicy-sub3-div{
+	width: 90%;
+	margin : auto;
+	background-color:green;
+	
+}
+
+.paragraph{
+	font-family: "Times New Roman";
+	font-size:large;
+	
+}
+
+
+
+/*privacy policy page css end===============================*/
+
+
+/*------------top employer page starts--------------*/
+
+div.topEmp-main-div{
+	background-color:white;
+	width:100%;
+	margin-left:auto;
+	margin-right:auto;
+	
+	
+}
+
+div.alphabate-main{
+	width:96%;
+	margin:auto;
+}
+
+div.img-container{
+	margin-left:auto;
+	margin-right:auto;
+}
+
+div.gallery {
+  border: 2px solid  #e0e0d1;
+  border-radius:5px;
+  width:96%;
+ 
+ 
+}
+
+div.gallery:hover {
+  border: 2px solid #ffb3b3;
+}
+
+div.gallery img {
+ width: 100%;
+ display:block;
+  height: auto; 
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom:auto;
+  margin-top:auto;
+}
+
+div.gallery img:hover{
+	opacity: 0.5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 10px ;
+  float: left;
+  width: 20.0%;
+}
+
+
+ /*Responsive*/
+ @media only screen and (max-width: 1150px) {
+  .responsive {
+    width: 25.0%;
+    margin: 6px 0;
+  }
+}
+ 
+ 
+@media only screen and (max-width: 800px) {
+  .responsive {
+    width: 33.33333%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .responsive {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width:400px){
+	.responsive{
+		width: 100%;
+	}
+}
+
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/*table view*/
+.top-emp-img-table{
+	width:100%;
+}
+
+td.top-emp-img-table-cell img{
+	width: 100%;
+  height: 100px;
+}
+
+
+/*top employer category page starts*/
+
+
+* {
+  box-sizing: border-box;
+}
+
+#searchJobsInput {
+  
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 50%;
+  font-size: 16px;
+  padding: 12px;
+  border: 1px solid #ddd;
+  float:right;
+}
+
+#top-emp-cat-table {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+  padding-top:5px;
+}
+
+
+
+ #top-emp-cat-table td {
+  text-align: left;
+  padding: 10px;
+}
+
+#top-emp-cat-table th{
+	padding:12px;
+	font-size:16px;
+	color: #ffffff;
+}
+
+#top-emp-cat-table tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#top-emp-cat-table th, #top-emp-cat-table th:hover {
+  background-color: #b30000;
+}
+
+#top-emp-cat-table tr:hover{
+	background-color:#ffffff;
+	color:#000000;
+	
+}
+
+.text-style{
+	color:gray;
+	
+}
+
+.text-style a:hover{
+	font-weight:bold;
+}
+
+/**/
+
+/*terms and conditions*/
+
+.terms-con-main-div{
+	width:100%;
+	
+	margin:auto;
+}
+
+.terms-con{
+	margin:auto;
+	position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+	padding-top:10px;
+	
+}
+
+#more {display: none;}
+
+div.tnc:hover{
+	padding-top: 25px;
+  box-shadow: 5px 10px 18px #888888;
+}
+
+.text{
+	margin-left:auto;
+	margin-right:auto;
+	text-align:justify;
+}
+
+.more{
+display:none;
+}
+
+.read{
+	display:block;
+	border-color:white;
+}
