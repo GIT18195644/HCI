@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" class="theme-light">
+
+<head>
+    <title>Forget Password - Top Jobs - Sri Lankan Largest Jobboard</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="favicon.ico" type="image/gif" sizes="16x16">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./css/color.schema.min.css" type="text/css" />
+
+</head>
+
+<body>
+    <div class="container" style="padding: 5% 35%;">
+        <div class="row">
+            <label id="switch" class="switch">
+                <input type="checkbox" onchange="toggleTheme()" id="slider">
+                <span class="slider round"></span>
+            </label>
+            <!-- <a><h4>Dark Mode is</h4><h4 id="schemaMode">A</h4></a> -->
+            <div class="well border border-danger">
+                <div class=".col-md-6 .offset-md-3">
+                    <form id="form" class="border border-light p-5" method="POST">
+                        <div class="form-group text-center">
+                            <h2>First, let's find your account</h2>
+                        </div>
+                        <div class="form-group text-center" style="font-size: 10rem;">
+                            <i class="fa fa-user-circle-o" aria-hidden="true" style="color: #dc3545"></i>
+                        </div>
+                        <div class="form-group text-center">
+                            <h5>Please enter your email address to get verification code.</h5>
+                        </div>
+                        <div class="form-group has-error has-feedback" style="padding-bottom: 10%;">
+                            <!-- Email -->
+                            <!-- <input type="email" class="form-control" id="emailAddress" placeholder="E mail" required> -->
+                            <input type="email" class="form-control" id="emailAddress"
+                                aria-describedby="emailHelp" placeholder="Enter email">
+                            <small id="emailHelp" class="form-text text-muted">If you can't find your account, Please send email admin@topjob.lk</small>
+                        </div>
+                    </form>
+                    <!-- <p id="error" class="text-center font-weight-bold"></p> -->
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <button class="btn btn-danger btn-block" onclick="index()">Cancel</button>
+                        </div>
+                        <div class="col-sm-6">
+                            <button class="btn btn-danger btn-block" type="submit" onclick="checkemail()">Find
+                                Account</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function index() {
+            window.open("index.html", "_self");
+        }
+        console.log("dinuka@gmail.com");
+        function checkemail() {
+            var EMAIL = document.getElementById("emailAddress").value;
+            var CEMAIL = "dinuka@gmail.com";
+            var mailformat = /^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9-]+(?:\.[a-z0-9-]+)*$/;
+            if (EMAIL == CEMAIL) {
+                window.open("otp-verify.html", "_self");
+            }
+            else if(EMAIL == "") {
+                document.getElementById("emailAddress").value = "";
+                document.getElementById("emailAddress").placeholder = "Please enter email address";
+            }
+            else if(!EMAIL.match(mailformat)) {
+                document.getElementById("emailAddress").value = "";
+                document.getElementById("emailAddress").placeholder = "You have entered an invalid email address!";     
+            }
+            else if (EMAIL != "dinuka@gmail.com" && EMAIL != "") {
+                document.getElementById("emailAddress").value = "";
+                document.getElementById("emailAddress").placeholder = "Email dosen't exist in database.";
+            }
+        }
+
+        // function to set a given theme/color-scheme
+        function setTheme(themeName) {
+            localStorage.setItem('theme', themeName);
+            document.documentElement.className = themeName;
+        }
+
+        // function to toggle between light and dark theme
+        function toggleTheme() {
+            if (localStorage.getItem('theme') === 'theme-dark') {
+                setTheme('theme-light');
+            } else {
+                setTheme('theme-dark');
+            }
+        }
+
+        // Immediately invoked function to set the theme on initial load
+        (function () {
+            if (localStorage.getItem('theme') === 'theme-dark') {
+                setTheme('theme-dark');
+                document.getElementById('slider').checked = false;
+            } else {
+                setTheme('theme-light');
+                document.getElementById('slider').checked = true;
+            }
+        })();
+    </script>
+</body>
+
+</html>
