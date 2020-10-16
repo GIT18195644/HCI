@@ -30,7 +30,7 @@
   <link rel="stylesheet" href="css/icomoon.css">
   <link rel="stylesheet" href="css/style.css">
 
-  <link rel="stylesheet" href="css/login.css">
+  <link rel="stylesheet" href="css/loginsample.css">
 </head>
 
 <body style="background-color: #f8fafb;">
@@ -58,7 +58,7 @@
   </nav>
 
 
-  <div class="hero-wrap hero-wrap-2" style="background-image: url('images/bg_1.jpg')"
+  <div class="hero-wrap hero-wrap-2" style="background-image: url('images/login-header.jpg')"
     data-stellar-background-ratio="0.5">
     <div class="overlay"></div>
     <div class="container1">
@@ -78,216 +78,301 @@
 
 
 
-  <section style="margin-top: 30px;" >
+
+  <section style="margin-top: 30px;">
     <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <img class="d-none d-md-block img-fluid" src="./images/login-bg.png" alt="">
-        </div>
-        <div class="col-md-6 col-12 justify-content-center align-self-center">
-          <!-- <marquee>
-            <h3 class="header">Welcome to top jobs! </h3>
-        </marquee> -->
-          <hr>
-          <form class="form" action="{{ route('login') }}" method="POST">
-
-            <div class="form-group">
-              <input id="username" type="text" class="form-control" name="username" value="" required
-                autocomplete="username" placeholder="Username" autofocus>
-
-              <span class="invalid-feedback" role="alert">
-                <strong></strong>
-              </span>
-
-            </div>
-            <div class="form-group">
-              <input id="password-field" type="password" class="form-control" name="password" required
-                autocomplete="current-password" placeholder="password" onmouseover="mouseoverPass();"
-                onmouseout="mouseoutPass();">
-
-              <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
-
-              <span class="invalid-feedback" role="alert">
-                <strong>{{ $message }}</strong>
-              </span>
-
-            </div>
-
-
-
-
-
-            <div class="form-group row">
-              <div class="col-md-6 offset-md-4">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" name="remember" id="remember" checked>
-                  <label class="form-check-label" for="remember">
-                    Remember Me?
-                  </label>
-                </div>
-              </div>
-            </div>
-            <input class="btn form-control" type="submit" value="Login">
-          </form>
-
-          <div id="formFooter">
-            <a class="underlineHover" href="user-auth.html">Forgot Password?</a>
-            <p> Or </p>
-            <a class="underlineHover" href="Register.html">Haven't created an account yet?</a>
+      <div class="row" >
+          <div class="col-md-6" >
+              <!-- <img class="d-none d-md-block img-fluid" src="./images/login.jpg" alt="" > -->
+              <img class="d-none d-md-block img-fluid" src="./images/3515082.jpg" alt="" >
           </div>
+
+
+          <div class="col-md-6 col-12 justify-content-center align-self-center"  >
+           
+
+
+
+  <div class="container">
+    <div class="form">
+      <div class="sign-in-section">
+      
+        <h1>Log in</h1>
+        <!-- <ul>
+          <li><i class="fa fa-facebook-f"></i></li>
+          <li><i class="fa fa-linkedin"></i></li>
+          <li><i class="fa fa-twitter"></i></li>
+        </ul> -->
+
+
+        <!-- <ul>
+         <li><i class="fa fa-facebook-f"></i></li>
+          <li><i class="fa fa-linkedin"></i></li>
+          <li><i class="fa fa-twitter"></i></li>
+          </ul> -->
+
+   
+    
+    
+
+
+
+       
+        <form  class="needs-validation" novalidate>
+          <marquee style="margin-top: 20px;">
+            <h3 class="header">Welcome to top jobs! </h3>
+        </marquee>
+        
+          <div class="form-field form-group">
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="Email" class="form-control" required/>
+            <span class="invalid-feedback" >
+                <strong>Provide valid Email</strong>
+            </span>
+          </div>
+          <div class=" form-field form-group">
+            <label for="password" onmouseover="mouseoverPass();" onmouseout="mouseoutPass()">Password</label>
+            <input id="password" class="form-control" type="password" placeholder="Password" required/>
+            <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+                  
+            <span class="invalid-feedback" >
+                <strong>Provide valid password</strong>
+            </span>
+          </div>
+          <div class="form-options">
+            <div class="checkbox-field">
+              <input id="rememberMe" type="checkbox" class="checkbox" />
+              <label for="rememberMe">Remember Me</label>
+            </div>
+            <a href="password-reset.html">Forgot Password?</a>
+          </div>
+          <div class="form-field">
+            <input type="submit" class="btn btn-warning" value="Submit" />
+          </div>
+        </form>
+        <div class="links">
+          
+          <a href="Register.html">Not a member? Register</a> 
+
+
+
+      
+   
+      
+ 
+      
+      
+      
         </div>
+
+
+
+        <div style="padding-left: 74px;padding-top: 40px;">
+        <button class="loginBtn loginBtn--facebook">
+          Login with Facebook
+        </button>
+    
+        <button  class="loginBtn loginBtn--google">
+          Login with Google
+        </button>
       </div>
+
+
+
+
+        </div>
+
+
+    
+
+
+
+      </div>
+
+
+
+   
+
+
+
     </div>
 
-    <!-- <div class="floating-shapes">
-    <span data-parallax='{"x": 150, "y": -20, "rotateZ":500}'><img src="images/fl-shape-1.png"
-        alt=""></span>
-    <span data-parallax='{"x": 250, "y": 150, "rotateZ":500}'><img src="images/fl-shape-2.png"
-        alt=""></span>
-    <span data-parallax='{"x": -180, "y": 80, "rotateY":2000}'><img src="images/fl-shape-3.png"
-        alt=""></span>
-    <span data-parallax='{"x": -20, "y": 180}'><img src="images/fl-shape-4.png" alt=""></span>
-    <span data-parallax='{"x": 300, "y": 70}'><img src="images/fl-shape-5.png" alt=""></span>
-    <span data-parallax='{"x": 250, "y": 180, "rotateZ":1500}'><img src="images/fl-shape-6.png"
-        alt=""></span>
-    <span data-parallax='{"x": 180, "y": 10, "rotateZ":2000}'><img src="images/fl-shape-7.png"
-        alt=""></span>
-    <span data-parallax='{"x": 250, "y": -30, "rotateX":2000}'><img src="images/fl-shape-8.png"
-        alt=""></span>
-    <span data-parallax='{"x": 60, "y": -100}'><img src="images/fl-shape-9.png" alt=""></span>
-    <span data-parallax='{"x": -30, "y": 150, "rotateZ":1500}'><img src="images/fl-shape-10.png"
-        alt=""></span>
-  </div> -->
 
 
 
 
-  </section>
+  </div>
+   </div>
+</div>
 
 
 
 
+</section>
 
 
-
+  
   <script>
-    $(".toggle-password").click(function () {
-
-      $(this).toggleClass("fa-eye fa-eye-slash");
-      var input = $($(this).attr("toggle"));
-      if (input.attr("type") == "password") {
-        input.attr("type", "text");
-      } else {
-        input.attr("type", "password");
-      }
-    });
-
-
-    function mouseoverPass(obj) {
-      var obj = document.getElementById('myPassword');
-      obj.type = "text";
-    }
-    function mouseoutPass(obj) {
-      var obj = document.getElementById('myPassword');
-      obj.type = "password";
-    }
+  // Example starter JavaScript for disabling form submissions if there are invalid fields
+  (function() {
+    'use strict';
+    window.addEventListener('load', function() {
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  
+      
+     
+      var forms = document.getElementsByClassName('needs-validation');
+      // Loop over them and prevent submission
+      var validation = Array.prototype.filter.call(forms, function(form) {
+        form.addEventListener('submit', function(event) {
+          if (form.checkValidity() === false) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+          form.classList.add('was-validated');
+        }, false);
+      });
+    }, false);
+  })();
   </script>
+  
+  
+  
+  
+  <script>
+  
+  
+    
+  
+      $(".toggle-password").click(function() {
+  
+  $(this).toggleClass("fa-eye fa-eye-slash");
+  var input = $($(this).attr("toggle"));
+  if (input.attr("type") == "password") {
+    input.attr("type", "text");
+  } else {
+    input.attr("type", "password");
+  }
+  });
+  
+  
+  function mouseoverPass(obj) {
+    var obj = document.getElementById('myPassword');
+    obj.type = "text";
+  }
+  function mouseoutPass(obj) {
+    var obj = document.getElementById('myPassword');
+    obj.type = "password";
+  }
+  </script>
+  
+  
+  
+  
+  
+
+  
 
   <footer class="ftco-footer ftco-bg-dark ftco-section">
-    <div class="container">
-      <div class="row mb-5">
-        <div class="col-md">
-          <div class="ftco-footer-widget mb-4" style="padding-left: 2%; padding-right: 2%;">
-            <div class="row">
-              <div class="col">
-                <h2 class="ftco-heading-2">Follow Us On!</h2>
-              </div>
-            </div>
-            <div class="row">
-              <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
-                <li class="ftco-animate"><a href="https://www.facebook.com/topjobs.lk/"><span
-                      class="fa fa-facebook"></span></a></li>
-                <li class="ftco-animate"><a href="https://twitter.com/topjobslk?lang=en"><span
-                      class="fa fa-twitter"></span></a></li>
-                <li class="ftco-animate"><a
-                    href="https://play.google.com/store/apps/details?id=lk.topjobs.androidapp&hl=en"><span
-                      class="fa fa-android"></span></a></li>
-                <li class="ftco-animate"><a href="https://apps.apple.com/lk/app/topjobs/id1204216479"><span
-                      class="fa fa-apple"></span></a></li>
-              </ul>
-            </div>
-            <div class="row">
-              <div class="row">
-                <div class="col">
-                  <p class="text-black text-left">Available natively for Android and iOS.</p>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col"> <a
-                    href="https://play.google.com/store/apps/details?id=lk.topjobs.androidapp&hl=en"><img
-                      src="./images/google-play.png" style="width: 100%; height: auto;"></a> </div>
-                <div class="col"> <a href="https://apps.apple.com/lk/app/topjobs/id1204216479"><img
-                      src="./images/apple-store.png" style="width: 100%; height: auto;"></a> </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md">
-          <div class="ftco-footer-widget mb-4 ml-md-4">
-            <h2 class="ftco-heading-2">TopJob.lk</h2>
-            <div class="row">
-              <div class="col">
-                <ul class="list-unstyled">
-                  <li><a href="#" class="pb-1 d-block">Home</a></li>
-                  <li><a href="#" class="pb-1 d-block">Post Your Vacancy</a></li>
-                  <li><a href="#" class="pb-1 d-block">Top Employers</a></li>
-                  <li><a href="#" class="pb-1 d-block">Terms & Conditions</a></li>
-                  <li><a href="#" class="pb-1 d-block">Privacy Policy</a></li>
-                </ul>
-              </div>
-              <div class="col">
-                <ul class="list-unstyled">
-                  <li><a href="#" class="pb-1 d-block">FAQ</a></li>
-                  <li><a href="Mediaroom.html" class="pb-1 d-block">Media Room</a></li>
-                  <li><a href="#" class="pb-1 d-block">Partners</a></li>
-                  <li><a href="#" class="pb-1 d-block">LMI</a></li>
-                  <li><a href="#" class="pb-1 d-block">Site Map</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md">
-          <div class="ftco-footer-widget mb-4">
-            <h2 class="ftco-heading-2">Have a Questions?</h2>
-            <div class="block-23 mb-3">
-              <ul>
-                <li><a href="#"><span class="icon icon-phone"></span><span class="text"> (+94) 11 776 5645 (+94) 77 391
-                      8922</span></a></li>
-                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">support@topjobs.lk</span></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12 text-center">
-          <p>Copyright &copy;
-            <script>document.write(new Date().getFullYear());</script> All rights reserved</p>
-        </div>
-      </div>
-    </div>
-  </footer>
+		<div class="container">
+			<div class="row mb-5">
+				<div class="col-md">
+					<div class="ftco-footer-widget mb-4" style="padding-left: 2%; padding-right: 2%;">
+						<div class="row">
+							<div class="col">
+								<h2 class="ftco-heading-2">Follow Us On!</h2>
+							</div>
+						</div>
+
+						<div class="row">
+							<ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
+								<li class="ftco-animate"><a href="https://www.facebook.com/topjobs.lk/"><span
+											class="fa fa-facebook"></span></a></li>
+								<li class="ftco-animate"><a href="https://twitter.com/topjobslk?lang=en"><span
+											class="fa fa-twitter"></span></a></li>
+								<li class="ftco-animate"><a
+										href="https://play.google.com/store/apps/details?id=lk.topjobs.androidapp&hl=en"><span
+											class="fa fa-android"></span></a></li>
+								<li class="ftco-animate"><a
+										href="https://apps.apple.com/lk/app/topjobs/id1204216479"><span
+											class="fa fa-apple"></span></a></li>
+							</ul>
+						</div>
+						<div class="row">
+							<div class="row">
+								<div class="col">
+									<p class="text-black text-left">Available natively for Android and iOS.</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col">
+									<a href="https://play.google.com/store/apps/details?id=lk.topjobs.androidapp&hl=en"><img
+											src="./images/google-play.png" style="width: 100%; height: auto;"></a>
+								</div>
+								<div class="col">
+									<a href="https://apps.apple.com/lk/app/topjobs/id1204216479"><img
+											src="./images/apple-store.png" style="width: 100%; height: auto;"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md">
+					<div class="ftco-footer-widget mb-4 ml-md-4">
+						<h2 class="ftco-heading-2">TopJob.lk</h2>
+						<div class="row">
+							<div class="col">
+								<ul class="list-unstyled">
+									<li><a href="index.html" class="pb-1 d-block">Home</a></li>
+									<li><a href="error.html" class="pb-1 d-block">Post Your Vacancy</a></li>
+									<li><a href="topEmp.html" class="pb-1 d-block">Top Employers</a></li>
+									<li><a href="TermsConditions.html" class="pb-1 d-block">Terms & Conditions</a></li>
+									<li><a href="privacy-policy.html" class="pb-1 d-block">Privacy Policy</a></li>
+									<li><a href="rss.html" class="pb-1 d-block">RSS Feed</a></li>
+								</ul>
+							</div>
+							<div class="col">
+								<ul class="list-unstyled">
+									<li><a href="FAQ.html" class="pb-1 d-block">FAQ</a></li>
+									<li><a href="Mediaroom.html" class="pb-1 d-block">Media Room</a></li>
+									<li><a href="partners.html" class="pb-1 d-block">Partners</a></li>
+									<li><a href="error.html" class="pb-1 d-block">LMI</a></li>
+									<li><a href="error.html" class="pb-1 d-block">Site Map</a></li>
+								</ul>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="col-md">
+					<div class="ftco-footer-widget mb-4">
+						<h2 class="ftco-heading-2">Have a Questions?</h2>
+						<div class="block-23 mb-3">
+							<ul>
+								<li><a href="error.html"><span class="icon icon-phone"></span><span class="text"> (+94) 11 776
+											5645 (+94) 77 391 8922</span></a></li>
+								<li><a href="error.html"><span class="icon icon-envelope"></span><span
+											class="text">support@topjobs.lk</span></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<!-- <div class="col-md-12 text-center">
+
+					Copyright &copy;
+						<script>document.write(new Date().getFullYear());</script> All rights reserved
+				</div> -->
+			</div>
+		</div>
+	</footer>    
+  
 
 
-
-
-
-  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
-      <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
-      <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
-        stroke="#F96D00" /></svg></div>
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
 
   <script src="js/jquery.min.js"></script>
@@ -303,19 +388,17 @@
   <script src="js/aos.js"></script>
   <script src="js/jquery.animateNumber.min.js"></script>
   <script src="js/scrollax.min.js"></script>
-  <script
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
 
 
-
-  <script>
-    function viewJob() {
-      window.open("browsejobs.html", "_self");
-    }
+ 
+ <script>
+	function viewJob() {
+	  	window.open("browsejobs.html","_self");
+	}
   </script>
-
-</body>
-
-</html>
+    
+  </body>
+</html> 
