@@ -131,7 +131,7 @@
       </button>
       <div class="collapse navbar-collapse" id="ftco-nav">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
           <li class="nav-item"><a href="browsejobs.html" class="nav-link">Job Feed</a></li>
           <li class="nav-item"><a href="#" class="nav-link">FAQ</a></li>
           <li class="nav-item"><a href="#" class="nav-link">Post a Job</a></li>
@@ -161,7 +161,7 @@
     <div class="container">
       <div class="row d-flex mb-5 contact-info">
         <div class="col-md-12 mb-4">
-          <button class="btn btn-danger" style="float:right;color: white;">Guide</button>
+          <button class="btn btn-danger" style="float:right;color: white;"  class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">Guide</button>
           <h2 class="h3">RSS Feed <i class="fas fa-rss" style="color: orangered;"></i></h2>
         </div>
       </div>
@@ -731,6 +731,77 @@
     });
 
   </script>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Guide For RSS</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <td valign="top" class="content justify"><p><span class="boldheading">What is RSS?</span> <br>	<!-- CC3678 by PW -->
+            
+          RSS stands for Really Simple Syndication. It is a popular method for delivering regularly changing web content. It will be used by topjobs to push Job Alerts to you. 
+
+    </p>
+        <p>
+    <span class="boldheading">Why use RSS?</span><br>
+    
+    RSS will provide you an alert on your desktop (via your RSS reader) as soon as job alerts are posted on topjobs.lk. This will enable you to stay up to date on jobs within your area of interest and provide you with the advantage of being the first to know when a vacancy arises. The objective of topjobs is to carry every vacancy in Sri Lanka, and currently there are hundreds of new vacancies added every day.
+
+    </p>
+    <span class="boldheading">How do I use RSS?</span><br>
+    
+    To use RSS you will need RSS reader software that will allow you to receive, collect and display RSS feeds. RSS readers allow you to select the feeds you require and, by automatically retrieving updates, stay current with new content as soon as it is published. If your browser does not have an in-build RSS reader, download a reader 
+    <br>Such as:<br>
+    <table border="0" cellspacing="0" cellpadding="0" class="body-link">
+      <tbody><tr>
+        <td height="10"></td>
+        </tr>
+      <tr>
+        <td nowrap=""><span class="content"><strong>»</strong></span><a href="http://www.feedreader.com" target="_blank">Feed Reader</a></td>
+      </tr>
+      <tr>
+        <td nowrap=""><span class="content"><strong>»</strong></span><a href="http://www.deskshare.com/awr.aspx" target="_blank">Active Web Reader</a></td>
+      </tr>
+      <tr>
+        <td nowrap=""><span class="content"><strong>»</strong></span><a href="http://www.google.com/reader/" target="_blank">Google Reader</a></td>
+        </tr>
+      <tr>
+              <td height="10"></td>
+        </tr>
+    </tbody></table>
+
+    
+    
+    or visit your favorite search engine and look up "RSS reader aggregator". You can use your RSS reader to read news sites and other cool content sites - so once you have installed it, check out other sites as well, such as BBC, CNN, MSDN, New York Times etc.  A good place to learn about RSS is <span class="body-link"><a href="http://www.rss-specifications.com/rss-directory.htm" target="_blank">www.rss-specifications.com/rss-directory.htm</a></span> which has a listing of RSS sites.
+
+          <p>After setting up your news reader, you will be ready to use our RSS feeds. To select one or more of the feeds below (for your preferred job categories), copy the location (URL) of the required job category and paste it in your RSS reader as instructed by the specific reader.  The reader will then list the vacancies, and update regularly. 
+</p>
+          <table border="0" cellpadding="4" cellspacing="1" class="content">
+            <tbody><tr bgcolor="#FFF9DD"> 
+              <td valign="top" bgcolor="#910B2D" class="style1">Job Category</td>
+              <td valign="top" bgcolor="#910B2D" class="style1">Location (URL)</td>
+              <td valign="top" bgcolor="#910B2D">&nbsp;</td>
+            </tr> 
+            </tbody>
+            </table>                
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+      </div>
+    </div>
+  </div>
+</div>
+
 
 
 </body>
